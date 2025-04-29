@@ -5,6 +5,7 @@ type Dialect string
 
 const (
 	Postgres   Dialect = "postgres"
+	Quest      Dialect = "quest"
 	Mysql      Dialect = "mysql"
 	Sqlite3    Dialect = "sqlite3"
 	Sqlserver  Dialect = "sqlserver"

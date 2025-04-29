@@ -31,7 +31,7 @@ func OpenDBWithDriver(driver string, dbstring string) (*sql.DB, error) {
 		driver = "libsql"
 	case "sqlite3":
 		driver = "sqlite"
-	case "postgres", "redshift":
+	case "postgres", "redshift", "quest":
 		driver = "pgx"
 	case "starrocks":
 		driver = "mysql"

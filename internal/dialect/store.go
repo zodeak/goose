@@ -51,6 +51,8 @@ func NewStore(d Dialect) (Store, error) {
 	switch d {
 	case Postgres:
 		querier = &dialectquery.Postgres{}
+	case Quest:
+		querier = &dialectquery.Quest{}
 	case Mysql:
 		querier = &dialectquery.Mysql{}
 	case Sqlite3:

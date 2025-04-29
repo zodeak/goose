@@ -17,6 +17,7 @@ const (
 	DialectMSSQL      Dialect = "mssql"
 	DialectMySQL      Dialect = "mysql"
 	DialectPostgres   Dialect = "postgres"
+	DialectQuest      Dialect = "quest"
 	DialectRedshift   Dialect = "redshift"
 	DialectSQLite3    Dialect = "sqlite3"
 	DialectTiDB       Dialect = "tidb"
@@ -39,6 +40,7 @@ func NewStore(dialect Dialect, tablename string) (Store, error) {
 		DialectMSSQL:      &dialectquery.Sqlserver{},
 		DialectMySQL:      &dialectquery.Mysql{},
 		DialectPostgres:   &dialectquery.Postgres{},
+		DialectQuest:      &dialectquery.Quest{},
 		DialectRedshift:   &dialectquery.Redshift{},
 		DialectSQLite3:    &dialectquery.Sqlite3{},
 		DialectTiDB:       &dialectquery.Tidb{},

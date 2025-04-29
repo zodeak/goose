@@ -35,6 +35,8 @@ func SetDialect(s string) error {
 	switch s {
 	case "postgres", "pgx":
 		d = dialect.Postgres
+	case "quest":
+		d = dialect.Quest
 	case "mysql":
 		d = dialect.Mysql
 	case "sqlite3", "sqlite":
